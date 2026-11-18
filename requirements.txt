@@ -1,0 +1,9 @@
+# Runtime dependency of the simulation:
+cryptography>=41
+
+# Only needed to run the test suite:
+pytest>=7
+
+# Only needed for the live web UI (ui/app.py):
+streamlit>=1.32
+pandas>=2.0

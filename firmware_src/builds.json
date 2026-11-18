@@ -1,0 +1,11 @@
+{
+  "product": "SmartSensor",
+  "builds": [
+    {"version": "0.9.0", "behavior": "ok",            "blink_ms": 2000, "note": "Old release with a known vulnerability - used for the downgrade test"},
+    {"version": "1.0.0", "behavior": "ok",            "blink_ms": 1000, "note": "Factory firmware flashed at manufacturing"},
+    {"version": "1.1.0", "behavior": "ok",            "blink_ms": 500,  "note": "First field update"},
+    {"version": "1.2.0", "behavior": "fail_selftest", "blink_ms": 250,  "note": "Buggy sensor driver - self-test fails"},
+    {"version": "1.2.1", "behavior": "crash",         "blink_ms": 250,  "note": "Hot-fix that crashes during boot"},
+    {"version": "1.3.0", "behavior": "ok",            "blink_ms": 200,  "note": "Fixed release"}
+  ]
+}
